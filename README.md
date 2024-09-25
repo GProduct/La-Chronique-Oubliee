@@ -34,36 +34,45 @@ requests
 ```
 
 ### 3. Installer Tesseract :
-Téléchargez et installez **Tesseract**. Installez-le dans le répertoire suivant :
 
-- Chemin : `/utils/tesseract/tesseract.exe`
+#### Sous Linux :
 
-Téléchargez Tesseract [ici](https://github.com/tesseract-ocr/tesseract).
+1. Installez Tesseract via le gestionnaire de paquets :
+   ```bash
+   sudo apt update
+   sudo apt install tesseract-ocr
+   ```
+2. Pour le français, installez également :
+   ```bash
+   sudo apt install tesseract-ocr-fra
+   ```
 
-Vérifiez que le chemin dans le script Python pointe vers la bonne adresse :
-```python
-pytesseract.pytesseract.tesseract_cmd = r'/utils/tesseract/tesseract.exe'
-```
+#### Sous Windows :
+
+1. Téléchargez Tesseract [ici](https://github.com/tesseract-ocr/tesseract).
+2. Installez-le dans le répertoire suivant : `/utils/tesseract/tesseract.exe`.
+
+3. Vérifiez que le chemin dans le script Python pointe vers l'exécutable :
+   ```python
+   pytesseract.pytesseract.tesseract_cmd = r'/utils/tesseract/tesseract.exe'
+   ```
 
 ## Utilisation
 
-1. Configurez vos clés API pour Twitter et Gallica votre environnement sous les noms de: 
-```bash
-X_ACCESS_TOKEN
-X_ACCESS_TOKEN_SECRET
-X_CONSUMER_KEY
-X_CONSUMER_SECRET
-COHERE_API_KEY
-```
+1. Configurez vos clés API pour Twitter et Gallica dans votre environnement sous les noms suivants :
+   ```bash
+   X_ACCESS_TOKEN
+   X_ACCESS_TOKEN_SECRET
+   X_CONSUMER_KEY
+   X_CONSUMER_SECRET
+   COHERE_API_KEY
+   ```
+
 2. Lancez le bot :
-```bash
-python bot.py
-```
+   ```bash
+   python bot.py
+   ```
 
 ## Contributions
 
 Les contributions sont bienvenues. Ouvrez une issue pour discuter des changements ou des améliorations.
-
-## Licence
-
-Ce projet est sous licence MIT.
