@@ -1,5 +1,7 @@
 # Gallica Newspaper Bot
 
+![Thumbnail](auto/sources/thumbnail.png)
+
 ## Description
 
 Ce bot sélectionne aléatoirement une Une de journal du même jour entre les années 1870 et 1955 à partir des archives de la BnF via l'API de Gallica. Il analyse la Une et publie un résumé d'un article via Twitter.
