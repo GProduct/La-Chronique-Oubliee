@@ -48,6 +48,10 @@ requests
    ```bash
    sudo apt install tesseract-ocr-fra
    ```
+3. Vérifiez que le chemin dans `OCR.py` pointe vers l'exécutable, par exemple:
+   ```python
+   pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+   ```
 
 #### Sous Windows :
 
@@ -55,10 +59,6 @@ requests
 2. Installez-le dans le répertoire suivant : `/utils/tesseract/tesseract.exe`.
 
 3. Vérifiez que le chemin dans `OCR.py` pointe vers l'exécutable, par exemple:
-   ```python
-   pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
-   ```
-   ou
    ```python
    pytesseract.pytesseract.tesseract_cmd = r'/utils/tesseract/tesseract.exe'
    ```
