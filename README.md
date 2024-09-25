@@ -52,7 +52,11 @@ requests
 1. Téléchargez Tesseract [ici](https://github.com/tesseract-ocr/tesseract).
 2. Installez-le dans le répertoire suivant : `/utils/tesseract/tesseract.exe`.
 
-3. Vérifiez que le chemin dans le script Python pointe vers l'exécutable :
+3. Vérifiez que le chemin dans `OCR.py` pointe vers l'exécutable, par exemple:
+   ```python
+   pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+   ```
+   ou
    ```python
    pytesseract.pytesseract.tesseract_cmd = r'/utils/tesseract/tesseract.exe'
    ```
