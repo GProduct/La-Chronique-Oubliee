@@ -4,7 +4,7 @@
 
 ## Description
 
-Ce bot sélectionne aléatoirement une Une de journal du même jour entre les années 1870 et 1955 à partir des archives de la BnF via l'API de Gallica. Il analyse la Une et publie un résumé d'un article via Twitter.
+Ce bot sélectionne aléatoirement une Une de journal du même jour entre les années 1870 et 1955 à partir des archives de la [BnF](bnf.fr) via [l'API de Gallica](https://api.bnf.fr/fr/api-gallica-de-recherche). Il analyse la Une OCérisée par [Tesseract](https://github.com/tesseract-ocr/tesseract) publie un résumé d'un article via Twitter/X.
 
 ## Fonctionnalités
 
@@ -76,7 +76,7 @@ requests
 
 2. Lancez le bot :
    ```bash
-   python bot.py
+   python main.py
    ```
 
 ## Contributions
