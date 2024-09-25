@@ -6,6 +6,9 @@
 
 Ce bot sélectionne aléatoirement une Une de journal du même jour entre les années 1870 et 1955 à partir des archives de la [BnF](bnf.fr) via [l'API de Gallica](https://api.bnf.fr/fr/api-gallica-de-recherche). Il analyse la Une OCérisée par [Tesseract](https://github.com/tesseract-ocr/tesseract) publie un résumé d'un article via Twitter/X.
 
+##👉 retouvez-le sur Twitter/X: 
+- [@pesvmanv](https://x.com/pesvmanv)
+
 ## Fonctionnalités
 
 - Sélection aléatoire de journaux via Gallica (1870-1955).
