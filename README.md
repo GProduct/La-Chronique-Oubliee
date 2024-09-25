@@ -1,4 +1,4 @@
-# Gallica Newspaper Bot
+# La Chronique Oubliée
 
 ![Thumbnail](auto/sources/thumbnail.png)
 
