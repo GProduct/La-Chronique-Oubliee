@@ -4,9 +4,9 @@
 
 ## Description
 
-La Chronique Oubliée est un bot qui sélectionne aléatoirement une Une de journal du même jour entre les années 1870 et 1955 à partir des archives de la [BnF](bnf.fr) via [l'API de Gallica](https://api.bnf.fr/fr/api-gallica-de-recherche). Il analyse la Une OCérisée par [Tesseract](https://github.com/tesseract-ocr/tesseract) publie un résumé d'un article via Twitter/X.
+La Chronique Oubliée est un bot qui sélectionne aléatoirement une Une de journal du même jour entre les années 1870 et 1955 à partir des archives de la [BnF](bnf.fr) via [l'API de Gallica](https://api.bnf.fr/fr/api-gallica-de-recherche). Il analyse la Une OCérisée par [Tesseract](https://github.com/tesseract-ocr/tesseract) publie un résumé d'un article via Twitter/𝕏.
 
-## Retouvez-le sur Twitter/X: 
+## Retouvez-le sur Twitter/𝕏: 
 👉 [@pesvmanv](https://x.com/pesvmanv)
 
 ## Fonctionnalités
@@ -14,7 +14,7 @@ La Chronique Oubliée est un bot qui sélectionne aléatoirement une Une de jour
 - Sélection aléatoire de journaux via Gallica (1870-1955).
 - Analyse OCR de la Une pour extraire du texte.
 - Résumé automatique d'un article.
-- Publication sur Twitter.
+- Publication sur Twitter/𝕏.
 
 ## Installation
 
