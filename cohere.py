@@ -9,7 +9,8 @@ def cohereChat(text, year):
     "https://api.cohere.com/v1/chat",
     headers={
         "Authorization": f"Bearer {api_key}",
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Accept-Language": "fr"
     },
     json={
         "message": f"""Écris un tweet du style {year} en Français, intégrant des hashtags pertinents, sur ce texte ##"{text}"##. Le texte doit être concis et de la même longueur que les tweets que je t'ai fournis précédemment. Utilise un langage approprié à l'époque pour évoquer la situation décrite, en gardant une tonalité informative et respectueuse.""",
