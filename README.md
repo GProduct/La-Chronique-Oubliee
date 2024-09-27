@@ -85,4 +85,5 @@ requests
 ## Contributions
 
 [🐐](https://github.com/cherifad)
-Les contributions sont bienvenues. Ouvrez une issue pour discuter des changements ou des améliorations.
+
+- Les contributions sont bienvenues. Ouvrez une issue pour discuter des changements ou des améliorations.
