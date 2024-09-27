@@ -68,14 +68,12 @@ def main():
 
 
     # Post tweet
-    """
     if tweet_content is not None:
         postTweet(f"{year} - {tweet_content} {tinyLink}")
         print("Tweet posté -----------------------")
     else:
         print("No tweet content, retrying...")
         main()
-    """
  
 
 if __name__ == "__main__":
