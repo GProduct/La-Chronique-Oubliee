@@ -1,0 +1,29 @@
+{
+    "forbidden_words": [
+        "paroisse",
+        "paroisses", 
+        "église",
+        "églises",
+        "paroissial",
+        "paroissiale",
+        "paroissiales",
+        "paroissiaux",
+        "paroissiaux",
+        "prêtre",
+        "prêtres",
+        "curé",
+        "curés",
+        "évêque",
+        "évêques",
+        "chrétien",
+        "chrétiens",
+        "chrétienne",
+        "chrétiennes",
+        "catholique",
+        "catholiques",
+        "christ",
+        "christique",
+        "christianisme",
+        "christianismes"
+    ]
+}

@@ -1,4 +1,0 @@
-pytesseract
-Pillow
-tweepy
-requests
