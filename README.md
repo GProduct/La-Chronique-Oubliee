@@ -3,11 +3,9 @@
 > [!CAUTION]
 > Il est possible que le bot dysfonctionne parfois. Les articles sont décryptés par une IA, qui peut avoir des difficultés à différencier les parodies (et/ou bandes dessinées) des véritables articles. Ainsi, certains résumés peuvent être totalement erronés ou sans rapport avec les articles d’origine
 
-![Thumbnail](res/thumbnail.png)
+La Chronique Oubliée est un bot BlueSky qui sélectionne aléatoirement la Une d'un journal publié même jour entre les années 1870 et 1955 à partir des archives de la [BnF](bnf.fr) via [l'API de Gallica](https://api.bnf.fr/fr/api-gallica-de-recherche). Il analyse la Une OCérisée par [Tesseract](https://github.com/tesseract-ocr/tesseract) puis publie le résumé d'un des articles sur BlueSky.
 
-## Description
-
-La Chronique Oubliée est un bot qui sélectionne aléatoirement une Une de journal du même jour entre les années 1870 et 1955 à partir des archives de la [BnF](bnf.fr) via [l'API de Gallica](https://api.bnf.fr/fr/api-gallica-de-recherche). Il analyse la Une OCérisée par [Tesseract](https://github.com/tesseract-ocr/tesseract) publie un résumé d'un article via BlueSky.
+Sa vocation est de faire découvrir la richesse des archives accessibles au grand public en explorant le passé de la presse française.
 
 ## Retouvez-le sur BlueSky 🦋
 
