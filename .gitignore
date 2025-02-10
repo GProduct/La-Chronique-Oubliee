@@ -1,0 +1,7 @@
+.env
+temp
+__pycache__/
+tkinter/
+pages/
+examples.json
+chat.py
