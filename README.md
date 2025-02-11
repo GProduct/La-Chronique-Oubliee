@@ -32,7 +32,7 @@ cd La-Chronique-Oubliee
 Assurez-vous d'avoir Python 3.x installé, puis exécutez :
 
 ```bash
-pip install -r requirements.txt
+pip install atproto pytesseract pillow
 ```
 
 ### 3. Installer Tesseract
