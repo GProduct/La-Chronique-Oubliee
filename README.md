@@ -101,8 +101,8 @@ pip install atproto pytesseract pillow
    }
    ```
 
-   > [!NOTE]
-   > Les valeurs données sont des exemples. Vous devez les remplacer par vos propres données.
+> [!NOTE]
+> Les valeurs données sont des exemples. Vous devez les remplacer par vos propres données.
 
 3. Lancez le bot :
 
