@@ -1,6 +1,6 @@
 from api.bnf.gallica import mainGallica
 from api.cohere.cohere import cohereRequest
-from atproto import Client, client_utils
+from atproto import Client
 from api.bsky.bsky import connect, post
 from api.bsky.bsky_utils import formatPost
   
@@ -12,8 +12,12 @@ while True:
     post_content = cohereRequest(year=result['data']['search_year'], filename=f'./temp/{result["data"]["uri"]}-ocr.txt')
     print(f"Post: {post_content}")
     client = Client()
-    tb, image, image_alt = formatPost(result, post_content)
-    length = len(tb.build_text())
+    try:
+        tb, image, image_alt = formatPost(result, post_content)
+        length = len(tb.build_text())
+    except Exception as e:
+        print(f"Error processing image: {e}")
+        continue
     if length <= 300 :
         print(f"Post content length: {length}, sending post...")
         break
