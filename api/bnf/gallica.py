@@ -123,7 +123,8 @@ def extractResults(fromIndex=None):
         # useful for the download of the document
         extra_record_metadata = record.find('.//srw:extraRecordData', namespaces)
         highres = extra_record_metadata.find('.//highres', namespaces).text
-        link = extra_record_metadata.find('.//link', namespaces).text
+        # not used
+        # link = extra_record_metadata.find('.//link', namespaces).text.removesuffix('/date')
         lowres = extra_record_metadata.find('.//lowres', namespaces).text
         medres = extra_record_metadata.find('.//medres', namespaces).text
         nqamoyen = extra_record_metadata.find('.//nqamoyen', namespaces).text
@@ -131,6 +132,7 @@ def extractResults(fromIndex=None):
         thumbnail = extra_record_metadata.find('.//thumbnail', namespaces).text
         typedoc = extra_record_metadata.find('.//typedoc', namespaces).text
         uri = extra_record_metadata.find('.//uri', namespaces).text
+        link = f"https://gallica.bnf.fr/ark:/12148/{uri}"
         # print(highres, '\n', lowres, '\n', medres, '\n', nqamoyen, '\n', provenance, '\n', thumbnail, '\n', typedoc, '\n', uri)
         
         # native resolution is not directly in the metadata, so we have to build the url

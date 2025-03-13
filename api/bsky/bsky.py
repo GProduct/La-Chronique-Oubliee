@@ -11,4 +11,8 @@ def connect(client):
     client.login(username, password)
         
 def post(client : Client, tb: client_utils.TextBuilder, image, image_alt):
-    client.send_image(tb, image=image, image_alt=image_alt)
+    try:
+        client.send_image(tb, image=image, image_alt=image_alt)
+        return True
+    except Exception as e:
+        return False
