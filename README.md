@@ -69,14 +69,7 @@ pip install atproto pytesseract pillow
 
 ## Utilisation
 
-1. Configurez vos clés API pour BlueSky et Cohere ainsi que le chemin vers Tesseract dans un fichier `.env` sous les noms suivants :
-
-   ```bash
-   BSKY_USERNAME=example.bsky.social
-   BSKY_PASSWORD=strongPassword
-   TESSERACT_OCR_PATH=/path/to/tesseract
-   COHERE_API_KEY=strongApiKey
-   ```
+1. Complétez le fichier `.env`.
 
 2. Utilisez vos propres données pour entrainer le modèle de résumé de Cohere, puis enregistrez les échanges d'entrainement dans `./res/examples.json`. Les exemples doivent être sous la forme :
 
