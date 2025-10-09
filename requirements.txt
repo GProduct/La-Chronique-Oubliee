@@ -1,0 +1,5 @@
+atproto==0.0.62
+Pillow==11.3.0
+pytesseract==0.3.13
+python-dotenv==1.1.1
+Requests==2.32.5
