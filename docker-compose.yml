@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  la-chronique-oubliee:
+    build: .
+    container_name: la-chronique-oubliee
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./crontab:/etc/cron.d/chronique-cron
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - BSKY_USERNAME=${BSKY_USERNAME}
+      - BSKY_PASSWORD=${BSKY_PASSWORD}
+      - TESSERACT_OCR_PATH=${TESSERACT_OCR_PATH}
+      - COHERE_API_KEY=${COHERE_API_KEY}
+    # command: ["python", "main.py"]
