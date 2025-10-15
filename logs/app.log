@@ -1,0 +1,28 @@
+2025-10-15 17:25:12,302 INFO root: Starting La Chronique Oubliée bot...
+2025-10-15 17:25:12,303 INFO root: Fetching data from Gallica...
+2025-10-15 17:25:12,303 INFO api.bnf.gallica: Initializing Gallica fetch and resetting processed log
+2025-10-15 17:25:12,483 INFO api.bnf.gallica: Document out of range, retrying with startRecord=158
+2025-10-15 17:25:22,684 INFO api.bnf.gallica: Document does not meet the requirements (forbidden word), retrying
+2025-10-15 17:25:23,066 INFO api.bnf.gallica: Document out of range, retrying with startRecord=24
+2025-10-15 17:25:33,258 INFO api.bnf.gallica: Selected document: Mercure de France : série moderne / directeur Alfred Vallette (bpt6k201875f)
+2025-10-15 17:25:33,258 INFO api.bnf.gallica: Downloading native resolution image to ./temp/bpt6k201875f-native.jpg
+2025-10-15 17:25:33,259 INFO api.bnf.gallica_utils: Downloading image from https://gallica.bnf.fr/iiif/ark:/12148/bpt6k201875f/f1/full/full/0/native.jpg -> ./temp/bpt6k201875f-native.jpg
+2025-10-15 17:25:34,906 INFO api.bnf.gallica_utils: Saved image to ./temp/bpt6k201875f-native.jpg (size=358468 bytes)
+2025-10-15 17:25:34,908 INFO api.bnf.gallica: Running OCR -> ./temp/bpt6k201875f-ocr.txt
+2025-10-15 17:25:34,908 INFO api.tesseract.tesseract: Executing OCR on ./temp/bpt6k201875f-native.jpg -> ./temp/bpt6k201875f-ocr.txt
+2025-10-15 17:25:38,627 INFO api.tesseract.tesseract: OCR written to ./temp/bpt6k201875f-ocr.txt (chars=1716)
+2025-10-15 17:25:38,628 INFO api.bnf.gallica: Recording processed URI: bpt6k201875f
+2025-10-15 17:25:38,628 INFO api.bnf.gallica_utils: Appended URI bpt6k201875f to ./temp/processed_documents.csv
+2025-10-15 17:25:38,628 INFO api.bnf.gallica: Gallica processing complete for URI: bpt6k201875f
+2025-10-15 17:25:38,628 INFO root: Result: 1920 - bpt6k201875f
+2025-10-15 17:25:38,628 INFO api.cohere.cohere: Preparing cohere request for year=1920 using OCR file=./temp/bpt6k201875f-ocr.txt
+2025-10-15 17:25:38,632 INFO api.cohere.cohere: Sending request to Cohere API at https://api.cohere.com/v1/chat
+2025-10-15 17:25:41,831 INFO api.cohere.cohere: Cohere response written to ./temp/cohere_response.json
+2025-10-15 17:25:43,975 INFO root: Post content length: 113, sending post...
+2025-10-15 17:25:43,976 INFO api.bsky.bsky: Logging in to Bluesky user=lachroniqueoubliee.bsky.social
+2025-10-15 17:25:44,330 INFO httpx: HTTP Request: POST https://bsky.social/xrpc/com.atproto.server.createSession "HTTP/1.1 200 OK"
+2025-10-15 17:25:44,876 INFO httpx: HTTP Request: GET https://ganoderma.us-west.host.bsky.network/xrpc/app.bsky.actor.getProfile?actor=lachroniqueoubliee.bsky.social "HTTP/1.1 200 OK"
+2025-10-15 17:25:45,616 INFO httpx: HTTP Request: POST https://ganoderma.us-west.host.bsky.network/xrpc/com.atproto.repo.uploadBlob "HTTP/1.1 200 OK"
+2025-10-15 17:25:46,166 INFO httpx: HTTP Request: POST https://ganoderma.us-west.host.bsky.network/xrpc/com.atproto.repo.createRecord "HTTP/1.1 200 OK"
+2025-10-15 17:25:46,167 INFO api.bsky.bsky: Post sent to Bluesky
+2025-10-15 17:25:46,167 INFO root: Post sent successfully !
