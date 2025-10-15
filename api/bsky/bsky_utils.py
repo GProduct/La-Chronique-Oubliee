@@ -2,6 +2,9 @@ import requests
 from PIL import Image
 from io import BytesIO
 from atproto import Client, client_utils
+import logging
+
+logger = logging.getLogger(__name__)
 
 def formatPost(document, post):
     tb = client_utils.TextBuilder()
@@ -31,7 +34,7 @@ def imageParser(image_url):
                 
                 return img_byte_arr.getvalue()
             except Exception as e:
-                print(f"Error opening image: {e}")
+                logger.exception("Error opening image from URL: %s", image_url)
         else:
-            print(f"Failed to fetch image. Status code: {response.status_code}")
+            logger.error("Failed to fetch image %s. Status code: %s", image_url, response.status_code)
     return None
